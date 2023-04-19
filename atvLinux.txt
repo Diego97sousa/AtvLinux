@@ -1,0 +1,93 @@
+Criando Diretorios
+
+mkdir Exercícios
+cd Exercícios
+mkdir América Europa Oceania
+cd Américas
+mkdir Brasil Uruguai
+cd Uruguai
+mkdir Montevideu
+cd ..
+cd Oceania
+mkdir Austrália
+cd ..
+cd ..
+
+Criar arquivos
+
+cd Exercícios
+cd Américas
+cd Brasil
+touch Brasil.txt
+cd ..
+cd ..
+cd Europa
+cd Itália
+touch Itália.dat
+cd ..
+cd ..
+cd Oceania
+cd Austrália
+touch Austrália.txt
+clear
+
+
+Gerenciar arquivos
+
+cd Exercícios
+cd Américas
+cd Brasil
+mv Brasil.txt /home/diego/Exercícios/Europa/Bélgica
+cd ..
+cd ..
+cd Europa
+cd Bélgica
+mv Brasil.txt Bélgica.txt
+nano Brasil.txt
+cd ..
+cd ..
+cd Oceania
+cd Austrália
+nano Austrália.txt
+cd ..
+cd ..
+cd Europa
+cd Itália
+cp Itália.dat /home/diego/Exercícios/Europa
+cd ..
+nano Itália.dat
+cd ..
+cd Oceania
+cd Austrália
+cp Austrália.txt /home/diego/Exercícios/Américas/Uruguai
+cd ..
+cd ..
+cd Américas
+cd Uruguai
+nano Austrália.txt
+mv Austrália.txt Uruguai.txt
+cd ..
+
+Mais gerenciamento de arquivos
+
+cat > Países_América
+1 Colômbia
+2 Bahamas
+3 Chile
+4 Guatemala
+5 Guiana
+6 Canadá
+7 Groenlândia
+Ctrl D
+cd ..
+
+Finalizando o exercício
+rm -r Europa
+cd Oceania
+cd Austrália
+rm Austrália.txt
+cd .. 
+cd ..
+tree -L 4
+cd ~
+exit
